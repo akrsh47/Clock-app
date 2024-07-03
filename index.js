@@ -52,10 +52,12 @@ function startClock(){
     
 
 
-    clock_doc.innerText =`${beforeZeroHour}:${beforeZeroMin}:${beforeZeroSec}`;
+    clock_doc.innerText =`${beforeZeroHour} : ${beforeZeroMin} : ${beforeZeroSec}`;
 
 
 }
+
+
 
 window.setInterval(startClock,1000);
 

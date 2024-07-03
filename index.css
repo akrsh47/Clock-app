@@ -2,10 +2,95 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 body{
     min-height: 100vh;
     background-color: #040D12;
+    color: whitesmoke;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.head1{
+    font-family: "Bevan", serif;
+    background-color: #183D3D;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 3rem;
+    text-shadow: 2px 3px 1px #040D12;
+}
+
+.clock_body{
+    font-family: "BioRhyme", serif;
+    background-color:transparent;
+    
+    padding:4rem;
+    margin:5rem auto;
+    /* border-radius:10%; */
+    border-radius: 4rem 4rem 0 0;
+    max-width: 365px;
+    min-width: 360px;
+    border: 6px solid #93B1A6;
+}
+
+#clock{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    /* max-width: 300px; */
+    /* background-color:#5C8374 ; */
+    color: white;
+    border-radius:3rem;
+    /* border: 5px solid #040D12; */
+}
+.nowrap{
+    white-space: nowrap;
+}
+.footer{
+    
+    font-family: "BioRhyme", serif;
+    
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    bottom: 0;
+    padding: 1rem;
+    background-color:#183D3D;
+    
+    
+    
+}
+
+button{
+    background-color:#183D3D;
+    border: 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button i {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+
+
+.footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    
+}
