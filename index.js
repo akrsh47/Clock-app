@@ -15,6 +15,10 @@ let beforeZeroHour = 0;
 
 const clock_doc = document.getElementById("clock");
 
+
+const hrbtn1_doc = document.getElementById("hrbtn1")
+const hrbtn2_doc = document.getElementById("hrbtn2")
+
 function startClock(){
     seconds++;
 
@@ -56,6 +60,22 @@ function startClock(){
 
 
 }
+
+
+
+hrbtn1_doc.addEventListener("click",function(){
+    if(hours/12>1){
+        hours-=12
+    }
+})
+
+hrbtn2_doc.addEventListener("click",function(){
+    if(hours/12<1){
+        hours=time.getHours()
+    }
+})
+
+
 
 
 
