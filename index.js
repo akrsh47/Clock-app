@@ -81,6 +81,10 @@ hrbtn2_doc.addEventListener("click",function(){
 
 window.setInterval(startClock,1000);
 
+function openWin_stpwtch(){
+    window.open("stopwatch/index.html","_self");
+}
+
 /* console.log(time.getHours())
 console.log(time.getMinutes())
 console.log(time.getSeconds()) */

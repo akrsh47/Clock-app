@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeTrack</title>
+    <title>StopWatch</title>
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
 
@@ -14,51 +14,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
     <div class="head1">Time Tracker</div>
-    <main>
-
-
-    <div class="clock_body">
-    <div id="clock" class="nowrap">00:00:00</div>
-    </div>
-
+<main>
     <section class="sec1">
-        <button id="hrbtn1" class="sec_btn">12-hour format</button>
-        <button class="sec_btn" id="hrbtn2">24-hour format</button>
+        <div class="head2">StopWatch</div>
+        <div class="stp_clock_body">
+        <div id="stp_clock" class="nowrap">00 : 00 : 00</div>
+        </div>
     </section>
-
-    </main>
-    <!-- <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> -->
 
     <section class="sec2">
-        <button onclick="openWin_stpwtch()"><i class="fa-solid fa-stopwatch"><br><a href="stopwatch/index.html">Stopwatch</a></i></button>
-        <button><i <i class="fa-solid fa-hourglass"><br><a href="#">Timer</a></i></button>
+
+        <button id="play_btn"><i class="fa-solid fa-play"></i></button>
+        <button id="pause_btn"><i class="fa-solid fa-pause"></i></button>
+        <button id="stop_btn"><i class="fa-solid fa-square"></i></button>
+        
+
     </section>
 
     
+    
+    </main>
+
+     <section class="sec3">
+        <button onclick="openWin_clock()"><i class="fa-regular fa-clock"><br><a href="/index.html">Clock</a></i></button>
+        <button><i <i class="fa-solid fa-hourglass"><br><a href="#">Timer</a></i></button>
+    </section>
 
     <script src="index.js" defer></script>
 </body>
