@@ -84,6 +84,9 @@ window.setInterval(startClock,1000);
 function openWin_stpwtch(){
     window.open("stopwatch/index.html","_self");
 }
+function openWin_timer(){
+    window.open("timer/index.html","_self");
+}
 
 /* console.log(time.getHours())
 console.log(time.getMinutes())

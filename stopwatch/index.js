@@ -1,6 +1,9 @@
 function openWin_clock(){
     window.open("/index.html","_self");
 }
+function openWin_timer(){
+    window.open("/timer/index.html","_self");
+}
 
 const stp_clock_doc = document.getElementById("stp_clock");
 
