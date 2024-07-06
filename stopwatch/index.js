@@ -22,8 +22,9 @@ let beforeZeroMin = 0;
 let timeInterval = null;
 let time_status = "pause"
 
+const time = new Date();
 
-
+const year_doc = document.getElementById("year");
 
 
 function startStopWatch(){
@@ -112,6 +113,8 @@ stop_btn_doc.addEventListener("click",function(){
     stp_clock_doc.innerText = "00 : 00 : 00";
 })
 
+
+year_doc.innerText = time.getFullYear()+" "
 
 // styling buttons using js
 

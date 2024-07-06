@@ -64,6 +64,7 @@ main{
     bottom: 0;
     padding: 1rem;
     background-color:#183D3D;
+    margin-bottom: 6rem;
     
     
     
@@ -113,4 +114,21 @@ button i {
     margin: 0 0.5rem;
     border-radius: 2rem;
     border:0;
+}
+
+footer{
+    background-color: #0d2222;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+        font-family: "Bevan", serif;
+        letter-spacing: 0.2rem;
+
+        padding: 1rem;
+
+
+}
+
+footer a{
+    color: whitesmoke;
 }

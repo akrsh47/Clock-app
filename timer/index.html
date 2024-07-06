@@ -8,26 +8,48 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-</head>
-<body>
-    <main>
-        <div>Timer</div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
 
-        <section>
-            <div id="timer">00 : 00 : 00</div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap" rel="stylesheet">
+
+
+<link rel="icon" type="image/x-icon" href="/timer.png">
+
+<meta name="description" content="Timer">
+<meta name="author" content="Akarsh">
+</head>
+
+  
+
+<body>
+    <div class="head1">Time Tracker</div>
+    <main>
+        <section class="timer_body">
+
+        <div class="head2">Timer</div>
+
+        <section class="sec1">
+            <div id="timer" class="whitespace">00 : 00 : 00</div>
         </section>
 
-        <section>
+        <section class="sec2">
             <input type="number" placeholder="Hrs" id="h" min="0">
             <input type="number" placeholder="Min" id="m" min="0" max="60">
             <input type="number" placeholder="Sec" id="s" min="0" max="60">
-            <br>
-            <button id="save_btn">Save</button>
+            
+            
         </section>
 
+        </section>
+
+<div class="save_block"><button id="save_btn">Save</button></div>
         
 
-        <section>
+        <section class="sec3">
 
         <button id="play_btn"><i class="fa-solid fa-play"></i></button>
         <button id="pause_btn"><i class="fa-solid fa-pause"></i></button>
@@ -38,6 +60,15 @@
 
 
     </main>
+
+    <section class="sec4" >
+        <button onclick="openWin_clock()" class="button"><i class="fa-regular fa-clock"><br><a href="/index.html">Clock</a></i></button>
+        <button onclick="openWin_stpwtch()" class="button"><i class="fa-solid fa-stopwatch"><br><a href="/stopwatch/index.html">StopWatch</a></i></button>
+    </section>
+
+    <footer>
+        <div class="f_div">&copy;<span id="year"></span><a href="https://github.com/akrsh47" target="_blank">Akarsh</a>.</div>
+    </footer>
 
 
     <script src="index.js" defer></script>

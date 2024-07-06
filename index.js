@@ -19,6 +19,8 @@ const clock_doc = document.getElementById("clock");
 const hrbtn1_doc = document.getElementById("hrbtn1")
 const hrbtn2_doc = document.getElementById("hrbtn2")
 
+year_doc = document.getElementById("year");
+
 function startClock(){
     seconds++;
 
@@ -87,6 +89,8 @@ function openWin_stpwtch(){
 function openWin_timer(){
     window.open("timer/index.html","_self");
 }
+
+year_doc.innerText = time.getFullYear()+" "
 
 /* console.log(time.getHours())
 console.log(time.getMinutes())

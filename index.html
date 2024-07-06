@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TimeTrack</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="timer.png">
 
-</head>
-<body>
-    
+
+  <meta name="description" content="Clock app">
+<meta name="author" content="Akarsh">
+
+  </head>
+  <body>
     <div class="head1">Time Tracker</div>
     <main>
+      <div class="clock_body">
+        <div id="clock" class="nowrap">00:00:00</div>
+      </div>
 
-
-    <div class="clock_body">
-    <div id="clock" class="nowrap">00:00:00</div>
-    </div>
-
-    <section class="sec1">
+      <section class="sec1">
         <button id="hrbtn1" class="sec_btn">12-hour format</button>
         <button class="sec_btn" id="hrbtn2">24-hour format</button>
-    </section>
-
+      </section>
     </main>
     <!-- <br>
     <br>
@@ -54,12 +64,25 @@
     <br> -->
 
     <section class="sec2">
-        <button onclick="openWin_stpwtch()"><i class="fa-solid fa-stopwatch"><br><a href="stopwatch/index.html">Stopwatch</a></i></button>
-        <button onclick="openWin_timer()"><i <i class="fa-solid fa-hourglass"><br><a href="timer/index.html">Timer</a></i></button>
+      <button onclick="openWin_stpwtch()">
+        <i class="fa-solid fa-stopwatch"
+          ><br /><a href="stopwatch/index.html">Stopwatch</a></i
+        >
+      </button>
+      <button onclick="openWin_timer()">
+        <i class="fa-solid fa-hourglass"
+          ><br /><a href="timer/index.html">Timer</a></i
+        >
+      </button>
     </section>
 
-    
+    <footer>
+      <div class="f_div">
+        &copy;<span id="year"></span
+        ><a href="https://github.com/akrsh47" target="_blank">Akarsh</a>.
+      </div>
+    </footer>
 
     <script src="index.js" defer></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+     min-height: 100vh;
+    background-color: #040D12;
+    color: whitesmoke;
+
+}
+
+.head1{
+    font-family: "Bevan", serif;
+    background-color: #183D3D;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 3px 1px #040D12;
+}
+
+.head2{
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    border: 6px solid #93B1A6;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    font-family: "BioRhyme", serif;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec1{
+    font-family: "BioRhyme", serif;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    padding: 4.5rem;
+    text-align: center;
+        border: 6px solid #93B1A6;
+    border-radius: 4rem;
+    font-size: 2rem;
+
+}
+
+.sec2{
+    display: flex;
+    justify-content: space-around;
+        border: 3px solid #93B1A6;
+    border-radius: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sec2 input{
+    font-family: "BioRhyme", serif;
+
+    width: 30%;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    margin: 0.5rem;
+     border-radius: 2rem; 
+     border: 2px solid #93B1A6;
+    
+    padding-left: 1rem;
+    background-color: transparent;
+    color: whitesmoke;
+
+
+}
+
+.sec3{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.timer_body{
+    padding: 1rem;
+    margin-top: 2rem;
+   
+}
+
+.sec4{
+     margin: 2rem 0.5rem;
+    font-family: "BioRhyme", serif;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* position: sticky;
+    bottom: 0; */
+    padding: 1rem;
+    background-color:#183D3D;
+}
+
+.sec4 a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.button{
+    background-color:#183D3D;
+    border: 0;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button i {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+.save_block{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+#save_btn{
+    font-family: "BioRhyme", serif;
+
+    background-color:#183D3D;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 1rem;
+    display: block;
+    width:100%;
+}
+
+#save_btn:hover{
+    cursor: pointer;
+}
+
+#play_btn{
+    color:  whitesmoke;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 50%;
+    margin:0 1rem;
+    background-color: #183D3D;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+#stop_btn{
+    color:  whitesmoke;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 50%;
+        margin:0 1rem;
+
+    background-color: #183D3D;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+
+    
+}
+#pause_btn{
+    
+    color:  whitesmoke;
+    padding:1rem;
+    font-size: 2rem;
+    width: 50%;
+        margin:0 1rem;
+
+    background-color: #183D3D;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+    
+}
+
+.pressed{
+    
+    background-color: #0a1a1a !important;
+    box-shadow: -4px -4px 2px black;
+    transition-duration: 0.2s;
+    
+}
+
+.pressed_stp{
+    box-shadow: 4px 4px 2px black;
+    transition-duration: 0.5s;
+}
+
+.blink_timer{
+    animation-name: blink;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+.whitespace{
+    white-space: nowrap;
+}
+
+footer{
+    background-color: #0d2222;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+        font-family: "Bevan", serif;
+        letter-spacing: 0.2rem;
+
+        padding: 1rem;
+
+
+}
+
+footer a{
+    color: whitesmoke;
+}
+
+@keyframes blink {
+    0%{
+        color: white;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: white;
+    }
+}
